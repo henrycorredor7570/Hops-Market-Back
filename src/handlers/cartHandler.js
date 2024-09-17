@@ -1,7 +1,7 @@
 const {
   getCart,
   setProduct,
-} = require("../controllers/cartController"); 
+} = require("../controllers/cartController");
 
 const getCartHandler = async (req, res) => {
   try {

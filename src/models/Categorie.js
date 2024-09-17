@@ -6,7 +6,7 @@ module.exports = (sequelize) => {
     "Categorie",
     {
       id: {
-        type: DataTypes.UUID, 
+        type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
       },
@@ -17,7 +17,7 @@ module.exports = (sequelize) => {
       },
 
       description: {
-        type: DataTypes.STRING, 
+        type: DataTypes.STRING,
         allowNull: true,
       },
     },

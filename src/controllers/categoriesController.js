@@ -2,7 +2,7 @@ const { Categorie } = require("../db");
 
 const createNewCategorie = async ({ name, description }) => {
   try {
-    const [newCategory, created] = await Categorie.findOrCreate({ 
+    const [newCategory, created] = await Categorie.findOrCreate({
       where: {
         name: name,
       },

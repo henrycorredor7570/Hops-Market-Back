@@ -1,7 +1,7 @@
 const { Order, OrderDetail, Product } = require("../db");
 
-const getCart = async (userId) => { 
-  try { 
+const getCart = async (userId) => {
+  try {
     const cart = await Order.findOne({
       attributes: ["id"],
       where: {

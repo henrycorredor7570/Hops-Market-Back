@@ -43,7 +43,6 @@ module.exports = (sequelize) => {
         allowNull: false,
         defaultValue: 1,
       },
-
       amountMl: {
         type: DataTypes.INTEGER,
         allowNull: false,
