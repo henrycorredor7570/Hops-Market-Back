@@ -52,7 +52,7 @@ const createUser = async ({
     city,
     country,
   });
-
+  
   const token = jwt.sign(
     {
       id: user.id,

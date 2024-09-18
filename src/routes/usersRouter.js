@@ -24,7 +24,7 @@ const {
 usersRouter.post("/signup", checkDuplicateUserNameOrEmail, createUserHandler); // funcion para verificar los roles: checkRolesExisted  (NO USAR POR EL MOMENTO)
 usersRouter.post("/signin", signinHandler);
 usersRouter.put("/update/:id", verifyToken, updateUserHandler);
-usersRouter.get("/allUsers", verifyToken, isAdmin, getAllUsersHandler);
+usersRouter.get("/allUsers", getAllUsersHandler); //, verifyToken, isAdmin
 usersRouter.get("/:id", verifyToken, getUserByIdHandler);
 
 

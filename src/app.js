@@ -37,7 +37,7 @@ server.options("", (req, res) => {
     "Origin, X-Requested-With, Content-Type, Accept, Authorization, x-access-token"
   );
   res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
-  res.sendStatus(204); // No content in the response
+  res.sendStatus(204);
 });
 
 server.use("/", routes);
