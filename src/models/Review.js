@@ -5,6 +5,7 @@ module.exports = (sequelize) => {
   sequelize.define(
     "Review",
     {
+      //falta la columna de la relacion con el usuario
       id: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,

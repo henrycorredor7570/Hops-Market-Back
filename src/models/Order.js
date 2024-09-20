@@ -1,8 +1,8 @@
 const { DataTypes } = require("sequelize");
-// Exportamos una función que define el modelo
 
 module.exports = (sequelize) => {
   sequelize.define("Order", {
+    //FALTA LA COLUMNA USER_ID QUE SE MENCIONA EN EL DB.JS
     id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,

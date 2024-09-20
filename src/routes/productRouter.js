@@ -1,14 +1,5 @@
 const { Router } = require("express");
-const {
-  createProduct,
-  allProducts,
-  getProduct,
-  deleteProduct,
-  activeProduct,
-  editProduct,
-  qualify,
-  qualified,
-} = require("../handlers/productHandler");
+const {createProduct,allProducts,getProduct,deleteProduct,activeProduct,editProduct,qualify,qualified} = require("../handlers/productHandler");
 const productRouter = Router();
 
 productRouter.post("/create", createProduct);

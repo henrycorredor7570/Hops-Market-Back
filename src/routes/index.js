@@ -15,11 +15,15 @@ const buysRouter = require("./buysRouter");
 const stadisticsRouter = require("./stadisticsRouter");
 const orderRouter = require("./orderRouter")
 
+router.use("/product", productRouter);
+router.use("/users", usersRouter);
+
+
+
+
 router.use("/dataUpload", saveAllRoute);
 router.use("/review", reviewRouter);
-router.use("/users", usersRouter);
 router.use("/saveCategories", categoriesSave);
-router.use("/product", productRouter);
 router.use("/categories", categoriesRoutes);
 router.use("/pay", mercadoPagoRoute);
 router.use("/filters", filterConfigurationRoutes);
